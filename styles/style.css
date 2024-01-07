@@ -9,6 +9,8 @@
   background-size: cover;
   background-position: bottom center;
   height: 100vh;
+  clip-path: polygon(50% 0%, 100% 0, 100% 60%, 49% 100%, 49% 100%, 0% 60%, 0 0);
+
 }
 .hero h1 {
   color: azure;
@@ -21,14 +23,21 @@
 .article, #cow-type {
   width: 80%;
   margin: 60px auto;
-  border-width: 10px;
-  border-color: greenyellow;
-  border-style: solid;
-  background-color: whitesmoke;
   padding: 20px;
 }
-.article h2 {
+.article h2, #cow-type h2 {
   text-align: center;
   margin: 10px 0;
   padding: 5px 0;
+}
+.cow-images {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.cow-images div {
+  max-width: 300px;
+}
+.cow-images img {
+  width: 100%;
 }
